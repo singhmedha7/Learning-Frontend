@@ -1,0 +1,27 @@
+*{
+    font-family: 'Gill Sans';
+
+}
+
+body{
+    background:  linear-gradient(to bottom, #ffff00 25%, #ffcc00 100%);
+
+    h1{
+    color: black;
+    font-size: 70pt;
+}
+h2{
+    background-color: #bebebe;
+    color: black;
+    font-size: 38pt;
+}
+ol{
+    color: black;
+    font: size 18pt;;
+}
+p{
+    background-color: #ebebeb;
+    font-size: 18px;
+    color: black;
+}
+}

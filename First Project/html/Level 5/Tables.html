@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <!-- <table> tag is used to define tables in html.
+        border(Defines Thickness) attribute is used to define its boundary.
+        <tr> is used to define no of rows.
+        <th> is used for header cell within a row. Text is bold and centred by default
+        <td> is used for the data in the table. -->
+    <table border="5">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>Mohar</td>
+            <td>17</td>
+            <td>12 <sup>th</sup></td>
+        </tr>
+        <tr>
+            <td>Neet</td>
+            <td>18</td>
+            <td>12 <sup>th</sup></td>
+        </tr>
+    </table> <br> <br>  
+    <table border="10">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>Mohar</td>
+            <td>17</td>
+            <td>12 <sup>th</sup></td>
+        </tr>
+        <tr>
+            <td>Neet</td>
+            <td>18</td>
+            <td>12 <sup>th</sup></td>
+        </tr>
+    </table>  
+    
+    <!--<caption> tag is used to provide a title or description for a table.
+        It is used immediately after table tag opening.
+        Centred above table by default.
+        Helps readers understand table content.-->
+    <br> <br>  
+    <table border="10">
+        <caption><span id="Student Information"> Student Information</span></caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>Mohar</td>
+            <td>17</td>
+            <td>12 <sup>th</sup></td>
+        </tr>
+        <tr>
+            <td>Neet</td>
+            <td>18</td>
+            <td>12 <sup>th</sup></td>
+        </tr>
+    </table> 
+    
+    <!-- colspan attribute is used for spanning the column into multiple.
+      It is used in <th> or <td>.
+      Takes the space of specified number of columns.
+      Used for combining cells tp create complex table layouts.-->
+        <br> <br>  
+    <table border="10">
+        <caption><span id="Student Information"> Student Information</span></caption>
+        <tr>
+            <th colspan="3">Students in Science</th>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>Mohar</td>
+            <td>17</td>
+            <td>12 <sup>th</sup></td>
+        </tr>
+        <tr>
+            <td>Neet</td>
+            <td>18</td>
+            <td>12 <sup>th</sup></td>
+        </tr>
+        <tr>
+            <td colspan="2">Total Students</td>
+            <td>2</td>
+        </tr>
+    </table> 
+
+ 
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+*{
+    background-color: rosybrown;
+}
+        
+        #Para1{
+            font-size: 15px;
+        }
+        #Para2{
+            font-size: 35px;
+        }
+        h3{
+            font-weight: 600;
+        }
+        #Para3{
+            font-weight: bolder;
+        }
+        .Italic{
+            font-style: italic;
+        }
+        .Oblique{
+            font-style: oblique;
+        }
+        .Normal{
+            font-style: normal;
+        }
+        #Para4{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #Para5{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #Para6{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #Para7{
+            font-family: "Ole", cursive;
+            font-weight: 700;
+            font-size: 20px;
+            font-style: normal;
+        }
+        .Confirm{
+            font-family: 'Material Symbols Outlined';
+            color: blueviolet;
+            font-size: 25px;
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24     
+        }
+        
+

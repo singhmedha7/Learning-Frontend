@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Classes and Transition</title>
+    <style>
+        #btn{
+            height: 20px;
+            width: 80px;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: black;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+            /* transition: all 1s ease-in-out 0s; */
+        }
+        #btn:hover{
+            height: 22px;
+            width: 85px;
+            border: 0;
+            color: blue;
+            background-color: burlywood;
+            /* box-shadow: horizontal-offset vertical-offset blur-radius spread-radius color; */
+            box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+        }
+        #btn:active{
+            color: crimson;
+            background-color: darkgrey;
+            transition-delay: 0s;
+            transition-duration: 0s;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Psuedo Classe are used to define special states of html elements.
+     Syntax: selector:pseudo-class {styles}.
+     :hover, :active, :first-child are some examples.
+     Targets elements based on their position or user action.-->
+    <button type="button" id="btn">Click Here</button>
+
+    <!--Transitions property enables smooth animation between change in CSS property values.
+     transition-property defines which css property will transition.
+     transition-duration sets how long the transition lasts.
+     transition-timing-function controls the speed curve of the transition.
+     transition-delay specifies a delay before transition starts.-->
+    
+</body>
+</html>

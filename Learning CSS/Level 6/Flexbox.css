@@ -1,0 +1,65 @@
+        *{
+            margin: 0; padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #Heading{
+            text-align: center;
+            color: aqua;
+            font-weight: 700;
+        }
+        #container{
+            height: 400px;
+            width: 300px;
+            background-color: beige;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 10px;
+            margin: 20px;
+        }
+        .box{
+            margin-right: 5px;
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+        #box1{ background-color: brown; order: 3;}
+        #box2{ background-color: cadetblue; flex-grow: 4; order: 1;}
+        #box3{ background-color: burlywood; flex-shrink: 4; order: 4;}
+        #box4{ background-color: chartreuse; align-self: center; order: 2;}
+        #heading{
+            text-align: center;
+            color: aqua;
+            font-weight: 700;
+        }
+        #Container{
+            height: 600px;
+            width: 500px;
+            background-color: beige;
+            border: 2px solid black;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap-reverse;
+            align-items: center;
+            align-content: start;
+            padding: 10px;
+            margin: 20px;
+        }
+        .Box{
+            margin-right: 5px;
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+        #box5{ background-color: brown;}
+        #box6{ background-color: cadetblue;}
+        #box7{ background-color: burlywood;}
+        #box8{ background-color: chartreuse;}
+        #box9{ background-color: cornflowerblue;}
+        #box10{ background-color: darkgoldenrod;}

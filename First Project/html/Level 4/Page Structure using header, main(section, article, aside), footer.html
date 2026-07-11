@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Structure using header, main(section, article, aside), footer</title>
+</head>
+<body>
+    <!-- Semantic tags describes content.
+     Good for search engines.
+     <header>,<footer>.<nav>,<article>,<section> are examples.-->
+    <!--Non-semantic tags have no specific meaning.
+    Used for layout and not good for seo.
+    <div>,<i>,<b>,<span>-->
+
+    <!--Body tags are divided into three main parts-header,main,footer.
+    Header tag includes tags like nav(navigation).
+    Main includes tags like section, article, and aside-->
+
+    <!--<header> tag is used for introductory content or navigation links.
+        It is a semantic tag, providing meaning to the enclosed content.
+        It is commonly found at the top of web pages, but can be inside article or section tags.
+        Can be defined more than once on a single page.-->
+    <header><big>This is my header</big></header><hr>
+
+    <!--<main> tag is used for the primary content of the web page.
+        This is also a semantic tag.
+        SHOULD ONLY APPEAR ONCE PER PAGE.
+        Help readers identify main content.
+        Excludes content repeated across multiple parts such as navigation or footer.-->
+    <main>
+    This is my main content 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit perspiciatis, beatae deserunt at eligendi! Aut ullam officiis vitae fugiat harum debitis? Quibusdam suscipit maxime dolor nobis reiciendis illo placeat.
+    </p>
+    </main><hr>
+
+
+    <!--<section> tag is a <main> tag.
+        We can divide our main content in distinct section.
+        Adds structure and meaning.
+        Often used with a heading tag.
+        Can be nested inside other section or article tag.-->
+    <main>
+        <section>
+            <h2>Admissions</h2>
+            Admissions will start from early May.
+        </section>
+        <section>
+            <h2>Placements</h2>
+            <!-- Can be used for just headings or headings with content.-->
+        </section>
+    </main><hr>
+    
+
+    <!--<article> tag is also a <main> tag.
+        Encloses standalone data such as blogs or posts or news.
+        It provides contextual meaning.
+        Content inside this tag should make sense even if taken out of contect.
+        Can be used multiple times on the same page.
+        Can be used inside a section tag. -->
+    <main>
+        <article>
+          HTML stands for HyperText Markup Language. It is the standard language used to create and structure the framework of web pages.Think of HTML as the skeleton of a website. It defines where headings, paragraphs, images, and links go, allowing web browsers to interpret and display the content properly.  
+        </article>
+        <section>
+            <h3>Tags in HTML</h3>
+            <article>
+               HTML tags are the fundamental building blocks of a webpage, acting as hidden keywords that instruct web browsers how to format, structure, and display content. They are always enclosed inside angle brackets. 
+            </article>
+        </section>
+    </main><hr>
+
+
+    <!-- <aside> tag is also a <main> tag.
+        It can contain section and article tags.
+        <aside> tag is used to write content that is not directly related to the main content.
+        Contains sidebar or supplementary content.
+        Indicates content is tangentially(partially) related to the main content.
+        Used for not crucial content.
+        Could hold widgets, quotes, or ads. -->
+    <main>
+      <aside>
+        <ul>
+            <li>Introductions to Aldorithms</li>
+            <li>Learn HTML in a single day</li>
+        </ul>
+      </aside>  
+      <aside>
+        <article>
+            <section>
+                <h4>Used for</h4>
+                <p>This tag is used for unimportant content</p>
+            </section>
+            <section>
+                <h4>Used inside</h4>
+                <p>This tag is used inside main tag</p>
+            </section>
+      </aside>
+    </main><hr>
+
+
+    <!--<footer> tag is used for extra info or links.
+        Includes copyright, contact info, and social links.
+        Semantic tag.
+        Location is typically at the bottom.-->
+    <footer>This is the footer <br>
+        -first link <br>
+        -second link <br>
+        -third link
+    </footer>
+</body>
+</html>

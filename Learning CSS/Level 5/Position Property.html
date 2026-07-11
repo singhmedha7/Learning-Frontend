@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        *{
+            margin: 0%; padding: 0%;
+        }
+        body{
+            font-size: 100px;
+        }
+        div{
+            margin: 20px; 
+            height: 70px;
+            width: 70px;
+            background-color: darksalmon;
+            border: 2px solid darkred;
+            font-size: medium;
+        }
+        #first1{
+            position: static;
+        }
+        #second2{
+            position: relative;
+            top: 20px; left: 90px;
+            z-index: 2; /* Relative appears above Fixed*/
+        }
+        #third3{
+            position: absolute;
+            top: 200px; left: 200px;
+            z-index: 1;
+        }
+        #fourth4{
+            position: fixed;
+            top: 20px; left: 90px;
+        }
+    </style>
+</head>
+<body>
+    <!--Static-Elements follow the natural document flow(top, right, bottom, left, z-index would not work).
+     Relative-Elements's position adjusted from its normal position.
+     Absolute-Positions element relative to the nearest positioned ancestor(corner of browser). x-y axis.
+     Fixed-Element positioned relative to the viewport, does not move on scrool.-->
+    <!--Z index determines the stacking order of elements along z axis.
+     Only applies to elements whose position is not static (to relative, absolute, fixed, sticky).
+     Accepts integer values, including negative numbers.
+     An element with a higher z index appears above others.-->
+    <div id="first1">Static</div><br>
+    <div id="second2">Relative</div><br>
+    <div id="third3">Absolute</div><br>
+    <div id="fourth4">Fixed</div><br>
+    box <br>
+    box <br>
+    box <br>
+    box <br>
+    box <br>
+    box <br>
+    box <br>
+</body>
+</html>

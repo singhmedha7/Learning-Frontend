@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vulpes Studio — Crafted with intention</title>
+
+    <!-- Google Fonts: Fraunces + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ====== NAVIGATION (Floating Pill) ====== -->
+    <nav class="floating-nav" id="mainNav">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-diamond"></span>
+                Vulpes Studio
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Partner with us</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== HERO SECTION ====== -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <!-- Left Column: Logo + CTAs -->
+            <div class="hero-left">
+                <div class="hero-logo-wrapper">
+                    <!-- REPLACE the SVG below with your actual logo file -->
+                    <img src="Screenshot 2026-07-01 154859.png" class="hero-logo-svg" viewBox="0 0 400 120" fill="none" height="300px" width="600px" style="mix-blend-mode: multiply;">
+                    <!-- NOTE: You can replace the above SVG with <img src="your-logo.svg" alt="Vulpes Studio" /> -->
+                </div>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn-primary">Partner with us</a>
+                    <a href="#portfolio" class="btn-primary">Explore our work</a>
+                </div>
+            </div>
+
+            <!-- Right Column: Animated Profile Card -->
+            <div class="hero-right">
+                <div class="profile-card" id="profileCard">
+                    <div class="profile-card-inner">
+                        <div class="profile-shine"></div>
+                        <div class="profile-avatar">
+                            <!-- REPLACE src with your actual photo -->
+                            <img src="ChatGPT Image Jun 30, 2026, 02_56_58 PM.png" alt="Medha Singh" id="profileAvatar" />
+                        </div>
+                        <div class="profile-details">
+                            <h3>Medha Singh</h3>
+                            <p>Creative Director</p>
+                            <div class="profile-contact-row">
+                                <span class="profile-phone">📞 +91 9968498792</span>
+                                <a href="#contact" class="profile-contact-btn">Partner with us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section (Space reserved for you to add your own text) -->
+        <div class="container about-placeholder" id="about">
+            <!-- PASTE YOUR ABOUT TEXT HERE. Example structure: -->
+            <!--
+            <h2>About Me</h2>
+            <p>Your bio goes here. Tell your story, your philosophy, and what drives your craft.</p>
+            -->
+        </div>
+    </section>
+
+    <!-- ====== SERVICES (Masonry Style) ====== -->
+    <section id="services" class="services-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-label">What we craft</span>
+            <h2 class="section-title">Foundations that scale</h2>
+            <p class="section-sub">Every service feeds into the next — sharp, purposeful, and built to last.</p>
+        </div>
+
+        <div class="services-masonry" id="servicesMasonry">
+            <!-- Card 1 -->
+            <div class="service-card" data-delay="0.1">
+                <div class="service-shape diamond-outline"></div>
+                <h3>Brand Strategy &amp; Positioning</h3>
+                <p class="service-tagline">The blueprint before the beauty.</p>
+                <p class="service-desc">Audits, positioning frameworks, messaging architecture, and tone of voice guidelines.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="service-card" data-delay="0.2">
+                <div class="service-shape rings"></div>
+                <h3>Visual Identity &amp; Design Systems</h3>
+                <p class="service-tagline">Distinctive, timeless, ownable.</p>
+                <p class="service-desc">Logos, palettes, typography, brand guidelines, and asset libraries.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="service-card" data-delay="0.3">
+                <div class="service-shape tail-curve"></div>
+                <h3>Creative Direction &amp; Digital</h3>
+                <p class="service-tagline">Bringing the vision to life.</p>
+                <p class="service-desc">Websites, campaigns, packaging, editorial design, posters, and magazines.</p>
+            </div>
+
+            <!-- Card 4 (Full Width) -->
+            <div class="service-card full-width" data-delay="0.4">
+                <div class="service-shape dots"></div>
+                <h3>What We Make</h3>
+                <p class="service-tagline">Deliverables that define brands.</p>
+                <p class="service-desc">Posters, magazines, websites, campaigns, packaging, brand guidelines, asset libraries, and editorial design.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ====== PORTFOLIO (Panorama Gallery) ====== -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container portfolio-header">
+            <span class="section-label">Projects in focus</span>
+            <h2 class="section-title">Selected work</h2>
+        </div>
+
+        <div class="gallery-wrapper" id="galleryWrapper">
+            <div class="gallery-track" id="galleryTrack">
+                <!-- Gallery items will be generated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Gallery Controls Hint -->
+        <div class="gallery-hint">←  →</div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-grid">
+            <!-- Info Card -->
+            <div class="contact-card info-card">
+                <div class="contact-card-accent clay"></div>
+                <div class="contact-card-body">
+                    <h3>Start a conversation</h3>
+                    <p>We work with brands that value clarity, craft, and a sharp point of view. If that sounds like you, we'd love to hear from you.</p>
+                    <div class="contact-details">
+                        <a href="mailto:vulpesstudio626@gmail.com" class="contact-email">vulpesstudio626@gmail.com</a>
+                        <span class="contact-studio">Remote · Worldwide</span>
+                    </div>
+                    <div class="contact-tags">
+                        <span>Branding</span>
+                        <span>Web Design</span>
+                        <span>Creative Direction</span>
+                    </div>
+                </div>
+                <div class="contact-tail-line"></div>
+            </div>
+
+            <!-- Form Card -->
+            <div class="contact-card form-card">
+                <div class="contact-card-accent brass"></div>
+                <div class="contact-card-body" id="form">
+                    <h3>Send an inquiry</h3>
+                    <form action="mailto:vulpesstudio626@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                        <input type="text" name="name" placeholder="Your name" required />
+                        <input type="email" name="email" placeholder="Email address" required />
+                        <input type="text" name="project" placeholder="Project type (e.g. Branding)" />
+                        <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+                        <!-- Pre-fill subject line -->
+                        <input type="hidden" name="subject" value="New Inquiry from Vulpes Studio Website" />
+                        <button type="submit" class="btn-primary full-width" id="Send-inquiry">Send inquiry</button>
+                    </form>
+                    <p class="form-note">Your message will open in your default email client.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-links">
+                <a href="#home"><span class="footer-icon">⌂</span> Home</a>
+                <a href="#services"><span class="footer-icon">◇</span> Services</a>
+                <a href="#portfolio"><span class="footer-icon">▣</span> Portfolio</a>
+                <a href="#contact"><span class="footer-icon">✉</span> Contact</a>
+                <!-- REPLACE the '#' in href below with your actual LinkedIn URL -->
+                <a href="#" target="_blank" rel="noopener noreferrer" id="linkedinLink"><span class="footer-icon">in</span> LinkedIn</a>
+                <!-- NOTE: Update the href above with your LinkedIn profile link -->
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 Vulpes Studio — Crafted with intention.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== PROJECT OVERLAY (Lightbox) ====== -->
+    <div class="project-overlay" id="projectOverlay">
+        <div class="overlay-content">
+            <button class="overlay-close" id="overlayClose">✕</button>
+            <div class="overlay-body" id="overlayBody">
+                <!-- Dynamic content injected by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

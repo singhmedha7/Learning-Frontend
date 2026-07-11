@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        #box{
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: darkcyan;
+        }
+        @media screen and (max-width: 400px) and (min-width: 250px) { 
+           #box{
+            border: 5px solid brown;
+            background-color: hotpink;
+           } 
+        } /*Combination of media queries*/
+    </style>
+</head>
+<body>
+    <!--Media queries are used to tailer styles for specific device charactristics.
+     Used to create responsive web designs.
+     Apply styles based on conditions like screen size.
+     Syntax: @media(condition){CSS rules}
+     Can combine multiple media types and conditions using and, or.-->
+
+     <!--If (width) is exactly given value then only the codition of border will apply.
+     (min-width) is the minimum width required to execute a property.
+     (max-width) is the maximum width-->
+    <div id="box"></div> 
+</body>
+</html>

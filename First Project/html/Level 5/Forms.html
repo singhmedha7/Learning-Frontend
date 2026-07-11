@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- <input> tag is used withing a <form> element to collect user input.
+        It is a self closing tag.
+        Along with type common attributes are name, value, placeholder, required-->
+    <form id="form">
+       <!-- placeholder tag shows a text in the input box before user inputs it.
+        placeholder acts as a hint.
+        required tag is used when the user is required to fill certain information.-->
+        Username: <input type="text" placeholder="Enter Name"><br>
+        Password: <input type="password" required>
+
+    </form><br><br>
+
+    <!--action attribute is used to specify the url to which the form data should be sent when submitted.
+        If not specified, the form will be submitted to the current page's URL.
+        Usually points to server side script like PHP, Python.-->
+    <!--If input type is submit, then a submit button is formed.-->
+    <form action="/contact-me">
+        Username: <input type="text" name="name"><br>
+        Password: <input type="password" required><br>
+        <input type="submit">
+    </form><br><br>
+
+    <!--name property acts as an ID for data, i.e., it identifies elements when submitting.
+        It is necessary to add name to all inputs so that the data reaches the corrects place.
+        Every name is unique for clarity.-->
+    <!--value property sets the initial value for input element.
+        It can be changed by the user however, if it is not changed then it is submitted as given.
+        This is the data sent when the form is submitted.-->
+    <!--date property is used to enter date.
+        Displays a calender to choose the date from.
+        We can find various layouts of date if we go through the MDN Reference.-->
+    <!--file property is used to input a file.-->
+    <!--color is used to take input as a color.-->
+    <!--range is used to input a range(like price range)-->
+    <!--button is used to make a custom button-->
+    <!--radio is used for when you have to select one choice from multiple choices.
+        In order to choose only one, name should always be the same in all choices.
+        value has to be used as it is sent to the URL when chosen.
+        If name is not defined or if name is different for all choices then all choices can be selected.-->
+    <!--checkbox is used when there are multiple choices that can be picked(multiple choice questions)
+        Their name and value needs to be defined.
+        name may be similar or different as per requirement.-->
+    <form action="/contact-me">
+        Username: <input type="text" name="username" value="Jia"><br>
+        Password: <input type="password" name="password" placeholder="Enter Password" required><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br>
+        File: <input type="file" name="file" placeholder="No file chosen"><br>
+        Colour: <input type="color" required ><br>
+        Range: <input type="range"><br>
+        <a href="#form">
+        Button:<input type="button" value="Click here">
+        </a><br>
+        <label for="female">Female</label>
+        <input type="radio" id="female" value="Female" name="gender"><br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" value="Make" name="gender"><br>
+        <label for="other">Other</label>
+        <input type="radio" id="other" value="Other" name="gender"><br>
+        Apple: <input type="checkbox" name="fruit" value="apple"><br>
+        Banana: <input type="checkbox" name="fruit" value="banana"><br>
+        Grapes: <input type="checkbox" name="fruit" value="grapes"><br>
+        <input type="submit">
+    </form><br><br>
+    
+    <!--<label> tag is used to add a text discription to the form element(like input).
+        for attribute is used to connect the label to a specific form element using the element's id.
+        It makes a form more accessible.
+        Enhances form readibility for seo.-->
+    <!--<select> tag is used to select one among a lot of options.
+        When we click on the box, a list of items pops up to choose from.
+        <option> tag is used to list the items.
+        value is defined inside the option tag to send back to the URL.
+        Cannot use placeholder or value tag as the first option is selected-->
+    <form action="/submit.php" method="post">
+        <label for="user_name">Username:</label>
+        <input type="text" id="user_name" name="username" placeholder="Enter Name" required><br>
+        <label for="fruit">Choose a fruit:</label>
+        <select name="fruit" id="fruit" >
+            <option value="select">Select</option>
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+        </select>
+        <input type="submit">
+    </form><br><br>
+
+    <!--<textarea> is used for multi line text input in forms.
+        It is a form tag but can be used inside body.
+        It uses the rows and cols property to designate the number of rows and column for the text.
+        Some browsers allow users to manually resize the textarea.-->
+    <form action="centre-et">
+    <textarea rows="3" cols="30" name="introduction">
+        About Yourself
+    </textarea><br>
+    <input type="submit">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors & Color Property=> Internal and Inline Styling</title>
+    <style>
+        /* /*Style uses comment like css */
+        *{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+       h1{
+        color: rgb(71, 71, 151);
+       }
+       p{
+        color: rgb(128, 215, 186);
+       }
+       #First{
+        color: chartreuse;
+       }
+       #Second{
+        color: darkgreen;
+       }
+       .Group,#Third{
+        color: hotpink;
+       }
+       h2,h3,h4{
+        color: darkolivegreen;
+       }
+       #Para p{
+        color:gold;
+       }
+    </style>
+</head>
+<body>
+    <!-- <style> tag is used in the head to use css in html file.
+     This is also called internal styling-->
+
+    <!--color property in html is used to add color to the foreground-->
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur vero ab doloribus est explicabo sint atque, rerum magni minus culpa.</p>
+    <h1>Checking for internal styling</h1>
+    <h1 style="color: chocolate;">Priority Styling</h1><hr>
+
+    <!-- inline styling is the method used to apply style directly to html elements using the style attribute.
+     It is ideal for single unique style alterations.
+     However it will lead to cluttered html if used extensively and hence it reduces usability of css in larger projects.-->
+    <h2 style="color: rgb(85, 3, 162);">Using Inline Tag</h2 ><hr>
+
+
+    <!-- SELECTORS-->
+    <!--Element selector is when element is selected based on their tag name.
+     It selects all the tags with that name.-->
+    <!--Universal selector* is used to select all the elements in a web page.-->
+
+
+    <!--id and class property are also used for selectors.
+     id is unique for each element.
+     class can be used across different elements repeatedly.
+     class is used when a group of elements is to be styled similarly.-->
+     <h3 id="First">First Heading</h3>
+     <h3 id="Second">Second Heading</h3>
+     <div id="Third">Third Heading</div>
+     <!--Write heading with #. Example #Third--> <hr>
+     <!--.Class for class-->
+     <div class="Group">
+        Group of Elements
+     </div>
+     <div class="Group">Random Elements</div><hr>
+
+
+     <!--Group selectors are used when you want to select multiple elements but do not want to make a class for all these elements.
+      It is done by separating selectors by commas.
+      Reduces code redundancy and saves time.-->
+    <h2>First Selector</h2>
+    <h3>Second Selector</h3>
+    <h4>Third Selector</h4><hr>
+
+    <!--Decendent Selectors are used in a heirarchal model-->
+    <div id="Para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ducimus.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+</body>
+</html>

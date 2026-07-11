@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model, Margin, Padding, Border, Border Radius, Box Sizing</title>
+    <style>
+        *{
+            margin: 0%; padding: 0%;
+        }
+        div{
+            height: 50px; width: 350px;
+            margin: 5px 5px 20px 5px ; /*One value defines all four*/
+            padding: 5px 20px 15px 20px;
+            background-color: aquamarine;
+            border: 10px solid thistle;
+            border-radius: 10px 5px 10px 5px;
+            box-sizing: content-box;
+
+        }
+        #first1{
+            margin: 30px 5px 5px 5px; 
+            border: 10px dashed thistle;
+            border-radius: 55px;
+            box-sizing: content-box;
+
+        /*Margin honors the bigger value and does not add two values together.*/
+        /*Here the bigger value is 30 so instead of adding 20 and 30, it inly utilises 30*/
+        }
+        #second2{
+            margin: 30px 5px 5px 5px;
+            border: 10px dotted thistle;
+            border-radius: 25px;
+            box-sizing: border-box;
+        }
+        button{
+            height: 70px; width: 70px;
+            margin: 100px;
+            padding: 5px 10px;
+            border: 5px dotted salmon;
+            border-radius:35px ;
+        }
+    </style>
+</head>
+<body>
+    <div>Box Model-Margin=>Border=>Padding=>Content</div>
+    <div id="first1">First</div>
+
+    <!--Border property creates an outline around html elements.
+     Defined by width, style, and color attributes.
+     Includes optons like solid, dashed, and dotted,
+     Can set attributes at once, eg, border:2px solid black.-->
+     <!--Border radius is used to add curvature to the corners of border.
+     Bigger the border radius, bigger the curvature.-->
+    <div id="second2">Second</div>
+
+     <!--Box sizing is used to define border and padding inside the box.
+     This means that the height and width defined will include the border and padding.
+     It is of two types, boder-box and content-box(default)-->
+    <a href="https://www.youtube.com/watch?v=OpWjt_wbV4E&t=7577s">
+    <button type="button">Click</button>
+    </a>
+</body>
+</html>

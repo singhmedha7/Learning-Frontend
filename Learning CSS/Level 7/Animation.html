@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 100px;
+            padding: 5px;
+            margin: 20px;
+            border: 1px solid white;
+            border-radius: 4px;
+            background-color: thistle;
+            text-align: center;
+            position: relative;
+            top: 50px; left: 300px;
+            animation-name: wanderer;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: 4; /*can be infinite*/
+            animation-direction: alternate-reverse;
+            box-shadow: 2px 3px silver;
+            /* animation: wanderer 4s ease-in-out 0s 4 alternate; */
+        }
+        @keyframes wanderer {
+            0%{left: 10px; top: 10px;}
+            50%{ left: 300px; top: 100px;}
+            100%{left: 605px; top: 10px;}
+        }
+    </style>
+</head>
+<body>
+    <!--The kayframes at rule start with @keyframes keyword.
+     Then animation name which is specified in animation-name property.
+     from is used to speecify when the style change will happen.Writing 0% is sames as from.
+     to specifies where animation should end. 100% can be used as well.
+     Syntax: @keyframes animation-name{
+     from{
+     CSS code
+     }
+     to{
+     CSS code
+     }
+     }-->
+    
+    <!--animation-name specifies the name of @keyframes defined animation.
+     animation-duration defines the total time animation takes to complete one cycle.
+     animation-timing-function controls pacing of animation(linear, ease-in).
+     animation-delay sets a delay before the animation starts.
+     animation-iteration-count indicates the number of times the animation should repeat.
+     animation-direction specifies the direction of the animation, allowing for reverse or alternate cycles.-->
+    <div class="box">Animation</div>
+</body>
+</html>

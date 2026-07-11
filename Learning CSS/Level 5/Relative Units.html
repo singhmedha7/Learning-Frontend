@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Units</title>
+    <style>
+        *{
+            margin: 0%; padding: 0%;
+            font-size: 50px;
+        }
+        #first{
+            height: 200px;
+            width: 200px;
+            background-color:blueviolet;
+            font-size: 25px;
+        }
+        #second{
+            height: 50%;
+            width: 50%;
+            background-color: beige;
+        }
+        #third{
+            height: 200px;
+            width: 200px;
+            background-color:blueviolet;
+            font-size: 25px;
+        }
+        #fourth{
+            background-color: azure;
+            height: 50%;
+            width: 50%;
+            font-size: 0.5em;/*0.5 times of parent text*/
+        }
+        #fifth{
+            height: 200px;
+            width: 200px;
+            background-color:blueviolet;
+            font-size: 15px;
+        }
+        #sixth{
+            background-color: azure;
+            height: 50%;
+            width: 50%;
+            font-size: 0.5rem; /*0.5 times of root element(body)*/
+
+        }
+        #seventh{
+            height: 50vh;
+            width: 50vw;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!--Percentage facilitates dynamic sizing relative to parents.
+     Ensures responsiveness across various screens.
+     Quickly set width and height as a percentage.
+     Here the second box will increase or decrease in size with respect to first box.-->
+    <div id="first">First
+    <div id="second">Second</div>
+    </div><br><br>
+
+    <!--EM makes the element font size relative to parent element's font size.
+     Facilitates easy scaling of elements for responsive design.
+     Commonly used for setting font sizes adaptively.-->
+     Body
+    <div id="third">Third
+    <div id="fourth">Fourth</div>
+    </div><br><br>
+
+    <!--REM facilitates dynamic sizing relative to root element.
+     Ensures responsiveness.
+     Quickly sets widtha nd height as percentage.-->
+     Body
+    <div id="fifth">Fifth
+    <div id="sixth">Sixth</div>
+    </div><br><br>
+            
+    <!--VW/VH are based on viewport's width or height for responsive design.
+     Essential for creating adaptive layouts. For eg - height : 100vh for full screen sections.
+     Useful for defining heights and widths that scale with the viewport.-->
+    <div id="seventh">Seventh</div>
+</body>
+</html>

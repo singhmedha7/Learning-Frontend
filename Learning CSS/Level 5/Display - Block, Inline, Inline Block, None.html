@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display - Block, Inline, Inline Block, None</title>
+    <style>
+        *{
+            margin: 0%; padding: 0%;
+        }
+        .Box{
+            background-color: bisque;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+        }
+        #box1{
+            display: block;
+        }
+        #box2{
+            display: inline;
+        }
+        #box3{
+            display: inline-block;
+        }
+        #box4{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!--Display Property is used to change the property into block or inline-->
+    <!--The block property turns the element into a block.
+     Here height and width can be defined-->
+    <!--The inline property is used to turn any element into inline element
+     Here height and width cannot be defined.
+     The elements will be positioned immediately after the previous element or beside them-->
+    <!--The inline block property is used when we want to turn the element into inline element and define its height and width
+     The elements are in the same line.-->
+    <!--The none property is used when we don't want the element to take any space.-->
+    <div id="box1" class="Box">Box1</div>
+    <div id="box2" class="Box">Box2</div>
+    <div id="box3" class="Box">Box3</div>
+    <div id="box4" class="Box">Box4</div>
+</body>
+</html>

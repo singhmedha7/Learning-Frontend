@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale=1.0">
+    <title>Text Align, Text Decoration, Text Decoration Style and Color</title>
+    <style>
+        .box{
+            height: 40px; width: 60px;
+        }
+        #box1{
+            background-color: aquamarine; text-align: center; color: rebeccapurple;
+        }
+        #box2{
+            background-color: cornflowerblue; text-align: right;
+        }
+        #box3{
+            background-color: cadetblue; text-align: left; visibility: visible; 
+        }
+        #box4{
+            text-decoration: none;
+        }
+        h2{
+            color: #81a;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+        h3{
+            color: #347;
+            text-decoration: underline dashed;
+        }
+        #Color{
+            color: burlywood;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: rosybrown;
+        }
+    </style>
+</head>
+<body>
+    <!-- Text align property comtrols the horizontal allignment of the text.
+     Can take values like left, right, centre, and justify.-->
+    <div id="box1" class="box">Box 1</div><br>
+    <div id="box2" class="box">Box 2</div><br>
+    <div id="box3" class="box">Box 3</div><hr>
+
+    <!--Text decoration modifies the appearance of inline text.
+     Options include none, underline, overline, and line through.
+     Commonly used to remove underline from hyperlinks for aesthetic purposes.
+     Don't use inside div-->
+    <a href="#" id="box4">
+    CSS 
+    </a>
+    <hr>
+
+    <!--You cannot use dext decoration style without text decoration where type of line(undrline or overline) is specified. 
+     Text decoration style is used to stylise the text with values like dashed, double, solid, wavy.
+     The shorthand is using the style after the type of line in txt decoration instead of text decoration style.-->
+    <h2>This is the use of text decoration style</h2>
+    <h3>Text Decoration</h3><hr>
+
+    <!--Text decoration color is used for adding color to the line from text decoration.-->
+    <h1 id="Color">Text Decoration Color</h1><hr>   
+
+
+
+
+</body>
+</html>

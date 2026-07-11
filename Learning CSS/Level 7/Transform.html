@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            padding: 5px;
+            margin: 20px;
+            border: 1px solid white;
+            border-radius: 4px;
+            position: relative;
+            top: 50px; left: 300px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            box-shadow: 2px 3px silver;
+        }
+        @media screen and (max-width: 100px) {
+            .box{
+                height: 20px;
+                width: 20px;
+            }
+        }
+        #box1{ background-color: cadetblue;}
+        #box1:hover{ transform: rotate(45deg);}
+        #box2{ background-color: burlywood;}
+        #box2:hover{ transform: rotate(180deg);}
+        #box3{ background-color: indianred;}
+        #box3:hover{ transform: rotatex(45deg) scalex(0.5);}
+        #box4{ background-color: plum;}
+        #box4:hover{ transform: rotatey(45deg);}
+        #box5{ background-color: rosybrown;}
+        #box5:hover{ transform: scale(2);}
+        #box6{ background-color: tomato;}
+        #box6:hover{ transform: translate(100px, -100px); }
+        #box7{ background-color: thistle;}
+        #box7:hover{ transform: skew(75deg); }
+
+    </style>
+</head>
+<body>
+    <!--Transform allows modification of an element's shape and position.
+     Can perform operations like rotate, scale, and translate.
+     Does not effect the layout of surrounding elements.
+     Used to create visual effects and 3D transitions.
+     Implemented with functions rotate(), scale(), skew(), translate()-->
+    
+    <!--Rotate is used to rotate an element around a fixed point.
+     Defined using the rotate() function within the transform property.
+     Default rotation point is the element's center.
+     The values are given in degrees.-->
+    
+    <!--Scale is used to increase or decrease the size of an element.
+     Defined using scale() function within transform property.-->
+
+    <!--Translate is used to change the position of the element.
+     The position may be changed along any axis however the default is x axis.-->
+
+    <!--Skew is used to tilt the size and perception of an element.
+     The values are given in degees. -->
+    <div id="box1" class="box">45 <sup>deg</sup> </div>
+    <div id="box2" class="box">180 <sup>deg</sup> </div>
+    <div id="box3" class="box">x45<sup>deg</sup> </div>
+    <div id="box4" class="box">y45<sup>deg</sup> </div>
+    <div id="box5" class="box">scale </div>
+    <div id="box6" class="box">translate </div>
+    <div id="box7" class="box">skew </div>
+
+</body>
+</html>

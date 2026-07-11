@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images and Videos </title>
+</head>
+<body>
+     <!--<image> tag is used to embed image in a web page.
+     Along with it src attribute is used to provide the source of the image(its location).
+     alt attribute is used to make sure that in case the image is not visible or user is unable to see it, a text would be displayed instead.
+     We can change the aspect ratio using height and width however only using one is recommended.
+     Attributes are added with syntax attribute="value"(px for height)
+     It is also self closing and does not require a closing tag.-->
+
+     <image src="Image/cat.png"
+     alt="A white persian cat"
+     height="400px"
+     width="500px"/>
+
+     <!-- Here we have added the picture of a cat.
+     We don't need to go to the next line for adding attributes. It can be done in the same line-->
+     <!--This is the relative path.-->
+
+     <!-- In order to add the absolute path, we pick the image directly from the source instead of a file-->
+      
+     <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/250px-GitHub_Invertocat_Logo.svg.png"
+     alt="Github"
+     height="400px"
+     width="500px"/>
+
+
+     <!-- <video> tag is used to embed a video.
+     src attribute is used for video link.
+     height and width are used the same as image tag.
+     Self closing tag.
+     Supports multiple formats like MP4, WebM.
+     Allows for built in controls via autoplay, controls, loop, etc. attributes. -->
+    
+     <video src="Image/Adele - Hello (Official Music Video).mp4" height="250px" width="400px"
+     autoplay 
+     controls 
+     loop
+     muted>
+
+     <!-- autoplay attribute allows the video to automatically start playing. However it will not work if the chrome version is more than 70.
+      In order to combat this, we use muted to play the video but keep it muted. User can unmute it as controls are provided by control tag.-->
+
+</body>
+</html>
