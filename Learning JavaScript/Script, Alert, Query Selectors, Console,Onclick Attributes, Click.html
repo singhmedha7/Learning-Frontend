@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Page to use JS tag script, alert, query selectors</title>
+  <title>Simple Page to use JS tags and elements=> script, alert(), query selectors, console.log()/.warn()/.error(), onclick attribute, .click()</title>
   <style>
     #click{
         color: black;
@@ -15,8 +15,10 @@
 </head>
 <body>
   <h1>Welcome to My Page</h1>
-  <button type="button" id="click" class="Mybutton">Button One</button><br><br>
-  <button type="button" class="Mybutton">Button Two</button>
+  <!--onclick attribute can be used to add JS directly to buttons such as alert(), console.log(), etc.
+  .click() can be used in console to click a button or link.-->
+  <button type="button" id="click" class="Mybutton" onclick="alert('I am clicked')">Button One</button><br><br>
+  <button type="button" class="Mybutton" onclick="console.log('Clicked')">Button Two</button>
   <hr>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quod, quidem porro perspiciatis tempora architecto non perferendis beatae. Dignissimos, enim.</p>
   <a href="https://www.knowledgegate.in">Visit KnowledgeGate</a>
@@ -26,16 +28,15 @@
   An external JS file can be linked to the html file using src attribute inside <script>.
 
   alert() is used to show a pop-up on our web page before it completes loading.
-  console.log() is used to show the message in console instead of pop-up
+  console.log() is used to show the message in console instead of pop-up.
 
   Query selectors like getElementById, getElementsByClassName, querySelector/All are used to select elements using Id, Class, Tags etc.
   querySelector/All is used just like selectors in CSS.
   querySelectorAll is used when a tag or class defines more than one element.
   Syntax- document.getElementById('click') (for the former two)
   Syntax- document.querySelector('#click')-->  
-<script>
-    alert('I am inside html page learning JS')
-    console.log('Hello')
+<script src="Script, Alert, Query Selectors, Console,Onclick Attributes, Click.js">
+  // code moved to Script, Alert, Query Selectors, Console,Onclick Attributes, Click.js
 </script>
 </body>
 </html>
