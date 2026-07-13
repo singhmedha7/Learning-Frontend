@@ -6,16 +6,21 @@
     <title>Variables</title>
 </head>
 <body>
+    <p id="my-name"></p>
     <!--Variables are like containers used to store data values.
     Variables can be defined using 'let' keyword.
     Variable definition may contain other variables.
     In order to update values of variables using assignment augmented operators.
     'const' is used for defining constant variables, i.e., they remain same throughout the program.
-    'var' can also be used to deeclare variables that need to be accessed by outside.-->
+    'var' can also be used to deeclare variables that need to be accessed by outside.
+    eval() is used to convert string to mathematical operations.-->
     <script>
         let welcomeMessage = 'Hello Friends';
         console.log(welcomeMessage);
-        let cartValue = Math.round(((15599-(10/100*15599))-272+(2499-(41/100*2499))-29+25+20)*118/100);
+
+        // Cart
+        const gstPercentage = 18;
+        let cartValue = Math.round(((15599-(10/100*15599))-272+(2499-(41/100*2499))-29+25+20)*(100+gstPercentage)/100);
         let cartSummary = `Your final Myntra Bag amount is $${cartValue}`;
         console.log(cartSummary);
         // cartValue = cartValue - 4;
@@ -24,9 +29,15 @@
         console.log(cartSummary);
         cartValue++;
         console.log(cartValue);
+
+        // Circumference using eval
         const pi = 3.14159265339;
         let radius = 3;
-        console.log(2*pi*radius);
+        console.log(eval('2*pi*radius'));
+
+        // Name
+        const myName = 'Medha';
+        document.querySelector('#my-name').innerText = myName;
     </script>
 </body>
 </html>
