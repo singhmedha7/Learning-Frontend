@@ -10,6 +10,13 @@
             background-color: coral;
             border-radius: 10px;
             box-shadow: 1px 1px silver;
+            padding: 5px 20px;
+            border: 2px solid silver;
+        }
+        #wishlist{
+            padding: 5px 40px;
+            border-radius: 5px;
+            text-transform:uppercase;
         }
 
     </style>
@@ -21,13 +28,16 @@
     <br>
     <br>
     <main>
-        <button class="button">Add to Bag</button>
-        <button id="wishlist">❤️Wishlist</button>
+        <button class="button" onclick="alert('Added to bag')">Add to Bag</button>
+        <button id="wishlist" onclick="alert('Wishlisted')">❤️Wishlist</button>
         <br>
         <hr>
         <button class="class">Click Me</button>
         <button id="clickme">Id</button>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus aliquid illo nisi tenetur voluptas blanditiis, officiis quos ad deserunt praesentium!</p>
     </main>
+    <script>
+        alert('Welcome');
+    </script>
 </body>
 </html>
