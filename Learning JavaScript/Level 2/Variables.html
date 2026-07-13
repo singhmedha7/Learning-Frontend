@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <!--Variables are like containers used to store data values.
+    Variables can be defined using 'let' keyword.
+    Variable definition may contain other variables.
+    In order to update values of variables using assignment augmented operators.
+    'const' is used for defining constant variables, i.e., they remain same throughout the program.
+    'var' can also be used to deeclare variables that need to be accessed by outside.-->
+    <script>
+        let welcomeMessage = 'Hello Friends';
+        console.log(welcomeMessage);
+        let cartValue = Math.round(((15599-(10/100*15599))-272+(2499-(41/100*2499))-29+25+20)*118/100);
+        let cartSummary = `Your final Myntra Bag amount is $${cartValue}`;
+        console.log(cartSummary);
+        // cartValue = cartValue - 4;
+        cartValue -= 4;
+        cartSummary = `Your final Myntra Bag amount is $${cartValue}`;
+        console.log(cartSummary);
+        cartValue++;
+        console.log(cartValue);
+        const pi = 3.14159265339;
+        let radius = 3;
+        console.log(2*pi*radius);
+    </script>
+</body>
+</html>
