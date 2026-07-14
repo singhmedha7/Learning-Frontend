@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    <!--Any variable defiined inside {} is limited to it.
+    Variables can be redefind inside {}.
+    var does not follow scope.
+    Scope can be global as well which is accessible accross the code.-->
+    <script>
+        let age = 34;
+        if (age>18){
+            let userMessage='You can drive';
+            console.log(userMessage);
+        }
+        else{
+            let userMessage='You cannot drive';
+            console.log(userMessage);
+        }
+
+        let userMessage;
+        if (age>18){
+            userMessage='You can drive';
+        }
+        else{
+            userMessage='You cannot drive';
+        }
+        console.log(userMessage);
+
+    </script>
+</body>
+</html>
