@@ -15,12 +15,14 @@ body {
 #calculator {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px; 
-    width: 250px;
     padding-bottom: 15px;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    width: 263px;  
+    height: 468px; 
     
     background: url('Screenshot\ 2026-07-14\ 200746.png') no-repeat center center;
     background-size: cover;
