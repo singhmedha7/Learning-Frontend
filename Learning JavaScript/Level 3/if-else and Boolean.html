@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else and Boolean</title>
+</head>
+<body>
+    <!--Booleans are data types in JS.
+    They can only have two values, i.e., True or False.
+    'true' is a string not a Boolean.-->
+
+    <!--if-else uses if(){} to check a condition.
+    The block of code is executed if it is true otherwise it is skipped.
+    else executes a block when the if condition is false.
+    Curly brackets can be omitted for single statements but it is not recommended to do so.
+    if-else ladder uses multiple if and else blocks where only one executes.
+    We can store conditions in variables for use in if statements.-->
+    <script>
+        // Boolean and Relational Operators
+        console.log(5>8); //Will give false
+        console.log(5<8); //Will give true
+        console.log(5==5); //Will give true
+        console.log(5==5.0); //Will give true
+        console.log(5=='5'); //Will give true. This happens due to type conversion by explicit conversion.
+        console.log(5===5.0); //Will give true
+        console.log(5==='5'); //Will give false.Does not perform explixit conversion.
+        // != and !== are used for inequality
+        console.log(typeof(5>8)); //Will give boolean
+        console.log(typeof('true')); //Will give string
+        console.log(5+5===4+6); //Will give true as order of comparison operators is less than arithmetic operators.
+
+        // if-else statements and ladder
+        console.log('Checking if you can drive');
+        let age = 70;
+        if(age>=18 && age<65){
+            console.log('You can drive');
+        }
+        else if(age>=65){
+            console.log('Ask for assistance');
+        }
+        else{
+            console.log(`You can't drive`);
+        }
+    </script>
+</body>
+</html>
