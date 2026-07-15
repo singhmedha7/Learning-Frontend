@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <!--Functions are blocks of reusable code.
+    It encourages code reusability.
+    It organises code and performs specific tasks.
+    It's naming rules are same as variables: camelCase.
+    Syntax: function greet(){
+                 //code
+            }
+            greet(name);
+            //code-->
+    <script>
+        let age=21;
+        function printAge(){ //function definition
+            console.log(`Your age is ${age}`);
+        }
+        printAge(); //function call
+        age=76;
+        printAge();
+        age=3;
+        printAge();
+
+        function sum(x,y){
+            let result=x+y;
+            return result; //return statement returns value outside the function
+        }
+        console.log(sum(4,5));
+
+    </script>
+</body>
+</html>

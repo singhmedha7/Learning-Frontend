@@ -19,7 +19,22 @@
     <!--BAT-->
     <button onclick="
     let userChoice='You have picked Bat';
-    generateComputerChoice();
+    // To pick a random number and decide Computer's choice
+    let randomNumber=Math.random()*3;
+    let computerChoice;
+    if(randomNumber<=1){
+        computerChoice='Bat';
+        console.log('Computer has also picked Bat');
+    }
+    else if(randomNumber<=2){
+        computerChoice='Ball';
+        console.log('Computer has picked Ball');
+    }
+    else{
+        computerChoice='Stump';
+        console.log('Computer has picked Stump');
+    }
+
     let resultMsg;
     if(computerChoice==='Ball'){
         resultMsg='User won!';
@@ -34,11 +49,24 @@
     alert(`${userChoice} \nComputer has picked ${computerChoice} \n${resultMsg}`);
     ">Bat</button>
 
-
     <!--BALL-->
     <button onclick="
     userChoice='You have picked Ball';
-    generateComputerChoice();
+    // To pick a random number and decide Computer's choice
+    randomNumber=Math.random()*3;
+    if(randomNumber<=1){
+        computerChoice='Bat';
+        console.log('Computer has picked Bat');
+    }
+    else if(randomNumber<=2){
+        computerChoice='Ball';
+        console.log('Computer has also picked Ball');
+    }
+    else{
+        computerChoice='Stump';
+        console.log('Computer has picked Stump');
+    }
+
 
     if(computerChoice==='Stump'){
         resultMsg='User won!';
@@ -53,11 +81,24 @@
     alert(`${userChoice} \nComputer has picked ${computerChoice} \n${resultMsg}`);
     ">Ball</button>
 
-
     <!--STUMP-->
     <button onclick="
     userChoice='You have picked Stump';
-    generateComputerChoice();
+    // To pick a random number and decide Computer's choice
+    randomNumber=Math.random()*3;
+    if(randomNumber<=1){
+        computerChoice='Bat';
+        console.log('Computer has picked Bat');
+    }
+    else if(randomNumber<=2){
+        computerChoice='Ball';
+        console.log('Computer has picked Ball');
+    }
+    else{
+        computerChoice='Stump';
+        console.log('Computer has also picked Stump');
+    }
+
     
     if(computerChoice==='Bat'){
         resultMsg='User won!';
@@ -71,26 +112,5 @@
 
     alert(`${userChoice} \nComputer has picked ${computerChoice} \n${resultMsg}`);
     ">Stump</button>
-
-
-
-
-    <!--Improving code using functions-->
-    <script>
-        let computerChoice;
-        function generateComputerChoice(){
-            // To pick a random number and decide Computer's choice
-            let randomNumber=Math.random()*3;
-            if(randomNumber<=1){
-                computerChoice='Bat';
-            }
-            else if(randomNumber<=2){
-                computerChoice='Ball';
-            }
-            else{
-                computerChoice='Stump';
-            }
-        }
-    </script>
 </body>
 </html>

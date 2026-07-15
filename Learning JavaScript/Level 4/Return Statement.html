@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Statement</title>
+</head>
+<body>
+    <!--Return statement sends a value back from a function.
+    Value, variable, calculation, etc. can be returned.
+    Return ends the funstion immediately.
+    Function calls make code jump around.
+    Prefer returning values over using global values.-->
+    <script>
+        function generateRandomMove(){
+            let random=Math.random();
+            let randomMove=random*3
+            return randomMove;
+        }
+        console.log(generateRandomMove());
+        console.log(generateRandomMove());
+        console.log(generateRandomMove());
+        console.log(generateRandomMove());
+        console.log(generateRandomMove());
+        console.log(generateRandomMove());
+        console.log(generateRandomMove());
+
+
+        function determineDrivingStatus(){
+            let age;
+            if (age===undefined){
+                return 'invalid';
+            }
+            console.log('Checking driving status');
+            let result=age>=18? 'You can Drive': `You can't drive`;
+            return result;
+        }
+        console.log(determineDrivingStatus());
+    </script>
+</body>
+</html>
