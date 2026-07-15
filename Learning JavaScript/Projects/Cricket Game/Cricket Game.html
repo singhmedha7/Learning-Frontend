@@ -19,7 +19,7 @@
     <!--BAT-->
     <button onclick="
     let userChoice='You have picked Bat';
-    generateComputerChoice();
+    let computerChoice=generateComputerChoice();
     let resultMsg;
     if(computerChoice==='Ball'){
         resultMsg='User won!';
@@ -38,7 +38,7 @@
     <!--BALL-->
     <button onclick="
     userChoice='You have picked Ball';
-    generateComputerChoice();
+    computerChoice=generateComputerChoice();
 
     if(computerChoice==='Stump'){
         resultMsg='User won!';
@@ -57,7 +57,7 @@
     <!--STUMP-->
     <button onclick="
     userChoice='You have picked Stump';
-    generateComputerChoice();
+    computerChoice=generateComputerChoice();
     
     if(computerChoice==='Bat'){
         resultMsg='User won!';
@@ -77,18 +77,17 @@
 
     <!--Improving code using functions-->
     <script>
-        let computerChoice;
         function generateComputerChoice(){
             // To pick a random number and decide Computer's choice
             let randomNumber=Math.random()*3;
             if(randomNumber<=1){
-                computerChoice='Bat';
+                return'Bat';
             }
             else if(randomNumber<=2){
-                computerChoice='Ball';
+                return'Ball';
             }
             else{
-                computerChoice='Stump';
+                return'Stump';
             }
         }
     </script>
