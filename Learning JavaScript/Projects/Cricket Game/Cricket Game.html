@@ -15,16 +15,18 @@
 </head>
 <body>
     <h1>Bat Ball Stump Game</h1>
+
+    <!--BAT-->
     <button onclick="
-    console.log('You have picked Bat');
+    let userChoice='You have picked Bat';
     // To pick a random number and decide Computer's choice
     let randomNumber=Math.random()*3;
     let computerChoice;
-    if(randomNumber>0 && randomNumber<=1){
+    if(randomNumber<=1){
         computerChoice='Bat';
-        console.log('Computer has picked Bat');
+        console.log('Computer has also picked Bat');
     }
-    else if(randomNumber>1 && randomNumber<=2){
+    else if(randomNumber<=2){
         computerChoice='Ball';
         console.log('Computer has picked Ball');
     }
@@ -33,11 +35,82 @@
         console.log('Computer has picked Stump');
     }
 
+    let resultMsg;
     if(computerChoice==='Ball'){
-        console.log('User won!')
+        resultMsg='User won!';
     }
+    else if(computerChoice==='Stump'){
+        resultMsg='Computer won!';
+    }
+    else{
+        resultMsg=`It's a tie`;
+    }
+
+    alert(`${userChoice} \nComputer has picked ${computerChoice} \n${resultMsg}`);
     ">Bat</button>
-    <button>Ball</button>
-    <button>Stump</button>
+
+    <!--BALL-->
+    <button onclick="
+    userChoice='You have picked Ball';
+    // To pick a random number and decide Computer's choice
+    randomNumber=Math.random()*3;
+    if(randomNumber<=1){
+        computerChoice='Bat';
+        console.log('Computer has picked Bat');
+    }
+    else if(randomNumber<=2){
+        computerChoice='Ball';
+        console.log('Computer has also picked Ball');
+    }
+    else{
+        computerChoice='Stump';
+        console.log('Computer has picked Stump');
+    }
+
+
+    if(computerChoice==='Stump'){
+        resultMsg='User won!';
+    }
+    else if(computerChoice==='Bat'){
+        resultMsg='Computer won!';
+    }
+    else{
+        resultMsg=`It's a tie`;
+    }
+
+    alert(`${userChoice} \nComputer has picked ${computerChoice} \n${resultMsg}`);
+    ">Ball</button>
+
+    <!--STUMP-->
+    <button onclick="
+    userChoice='You have picked Stump';
+    // To pick a random number and decide Computer's choice
+    randomNumber=Math.random()*3;
+    if(randomNumber<=1){
+        computerChoice='Bat';
+        console.log('Computer has picked Bat');
+    }
+    else if(randomNumber<=2){
+        computerChoice='Ball';
+        console.log('Computer has picked Ball');
+    }
+    else{
+        computerChoice='Stump';
+        console.log('Computer has also picked Stump');
+    }
+
+    
+    if(computerChoice==='Bat'){
+        resultMsg='User won!';
+    }
+    else if(computerChoice==='Ball'){
+        resultMsg='Computer won!';
+    }
+    else{
+        resultMsg=`It's a tie`;
+    }
+
+    alert(`${userChoice} \nComputer has picked ${computerChoice} \n${resultMsg}`);
+    ">Stump</button>
 </body>
 </html>

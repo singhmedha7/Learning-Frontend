@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy and Falsy Values</title>
+</head>
+<body>
+    <!--We do not need do define variables with initial values all the time.
+    0, null, undefined, false, Nan, "" etc. are used to define empty strings.
+    These are called Falsy values.
+    Truthy values are all the other values not listed as falsy.
+    Used in conditional statements like if.
+    Non-boolean values are auto converted in logical operations.
+    We have to be explicit in comparisons to avoid unexpected behaviour.-->
+
+    <!--If you have forgotten to define a value or did not define any initial value to a variable, it is undefined.
+    On the other hand if you do not want to define a variable's value then the variable is null.
+    Nan means not a number, i.e., the value of the variable is not a number.-->
+    <script>
+        let age=21;
+        console.log(age);
+        if(age){
+            console.log('You have a valid age');
+        }
+        else{
+            console.log('Undefined');
+        }
+
+        age=0;
+        console.log(age);
+        if(age){
+            console.log('You have a valid age');
+        }
+        else{
+            console.log('Undefined');
+        }
+
+        age=null;
+        console.log(age);
+        age=5/'i';
+        console.log(age);
+        age='';
+        console.log(age);
+    </script>
+</body>
+</html>

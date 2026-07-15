@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if Alternatives</title>
+</head>
+<body>
+    <!--Ternary Operators: This is a quick one-line if-else.
+    Syntax: condition? trueValue: falseValue;-->
+
+    <!--Guard Operators: Used when a fallback value is needed.
+    Syntax: value|| defaultValue;-->
+
+    <!--Default Operator: Used when you want to consider only null and undefined falsy.
+    Syntax: value?? fallbackValue;-->
+
+    <!--All these simplify conditional logic.
+    They should be used wisely to maintain readability.-->
+
+    <script>
+        //Ternary Operator
+        let age=21;
+        let result = age>18? 'Adult': 'Kid';
+        console.log(result);
+
+        // Guard Operator is used when a value is not given
+        age='';
+        let finalAge= age || 18;
+        console.log(age);
+        console.log(finalAge);
+
+        // Default Operator works the same way as guard op. however it only considers null and undefined as falsy
+        age=null;
+        let FinalAge=age ?? 18;
+        console.log(age);
+        console.log(FinalAge);
+    </script>   
+</body>
+</html>
