@@ -21,7 +21,7 @@
     let userChoice='Bat';
     let computerChoice=generateComputerChoice();
     let resultMsg=getResult(userChoice,computerChoice);
-    alert(`You have picked ${userChoice} \nComputer has picked ${computerChoice} \n${resultMsg}`);
+    showResult(userChoice,computerChoice,resultMsg);
     ">Bat</button>
 
 
@@ -30,7 +30,7 @@
     userChoice='Ball';
     computerChoice=generateComputerChoice();
     resultMsg=getResult(userChoice,computerChoice);
-    alert(`You have picked ${userChoice} \nComputer has picked ${computerChoice} \n${resultMsg}`);
+    showResult(userChoice,computerChoice,resultMsg);
     ">Ball</button>
 
 
@@ -39,7 +39,7 @@
     userChoice='Stump';
     computerChoice=generateComputerChoice();
     resultMsg=getResult(userChoice, computerChoice);
-    alert(`You have picked ${userChoice} \nComputer has picked ${computerChoice} \n${resultMsg}`);
+    showResult(userChoice,computerChoice,resultMsg);
     ">Stump</button>
 
 
@@ -60,6 +60,7 @@
                 return'Stump';
             }
         }
+        
 
         function getResult(userMove,computerMove){
             console.log(`User: "${userMove}", Computer: "${computerMove}"`);
@@ -91,6 +92,11 @@
                     return 'Computer won!';
                 }
             }
+        }
+
+
+        function showResult(userMove,computerMove,result){
+            alert(`You have picked ${userMove} \nComputer has picked ${computerMove} \n${result}`);
         }
     </script>
 </body>
