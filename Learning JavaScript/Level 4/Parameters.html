@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameters</title>
+</head>
+<body>
+    <!--These are the input values that a finction takes.
+    Parameters put value in the function while return gets the value out.
+    Their naming convention is the same as variables.
+    Parameters are the Formal parameters defined with the function definition while Actual parameters or Arguments are passed during function call.
+    Functions can take more than one parameters.
+    We can set a default value for parameters.-->
+
+    <script>
+        function diff(a,b){
+            let d=a-b;
+            return d;
+        }
+        let num = diff(5,6);
+        console.log(num);
+
+        function greeting(name='Rio'){
+            console.log(`Namaste ${name}`);
+        }
+        greeting();
+    </script>
+</body>
+</html>
