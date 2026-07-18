@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prectice Set 4</title>
+</head>
+<body>
+    <script>
+        // Odd or Even
+        function isOdd(number){
+            let rem=number%2;
+            if(rem===1){
+                return 'Number is odd';
+            }
+            else{
+                return 'Number is even';
+            }
+        }
+        console.log(isOdd(42));
+        console.log(isOdd(47));
+        console.log(isOdd(0));
+
+        // Larger number
+        function larger(num1,num2){
+            return num1>num2? `${num1} is larger`: `${num2} is larger`;
+        }
+        console.log(larger(462,278));
+        console.log(larger(4007,7892));
+        console.log(larger(98765,7892));
+
+        // Celsius to Fahrhenheit
+        function toFahrenheit(celsiusValue){
+            let Celsius=(9/5)*celsiusValue+32;
+            return `${celsiusValue}°F is equal to ${Celsius}°C`;
+        }
+        console.log(toFahrenheit(39));
+        console.log(toFahrenheit(142));
+    </script>
+</body>
+</html>
