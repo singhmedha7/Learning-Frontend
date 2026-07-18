@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <!--Object groups multiple values together in key-value pairs.
+    Defined using {} to enclose the properties.
+    Ex- product{name,price}
+    . Operator is used to access values.
+    It organises related data under a single name.
+    Syntax: let user={
+              name: "John"(Object property)
+        (Key) age: 40, (Value)
+              }
+    Properties of an object are accessed using .Operator like product.price
+    Bracket Notation is useful for properties with special characters product["nick-name"].Variables can be used to access properties.
+    typeof returns object.
+    Values can be added or remored from an object.
+    Delete values using 'delete'-->
+
+    <script>
+        let product = {
+            company: 'Mango',
+            price: 861,
+            item_name: 'T-shirt',
+        };
+        // . Operation
+        console.log(product); //{company: 'Mango', price: 861, item_name: 'T-shirt'}
+        console.log(product.company); //Mango
+        console.log(product.price); //861
+        console.log(product.item_name); //T-shirt
+        product.company='Banana';
+        console.log(product); //{company: 'Banana', price: 861, item_name: 'T-shirt'}
+
+        // Bracket Notation
+        console.log(product['company']);
+
+        // Adding a property
+        product.discount='15%' ;
+        console.log(product);
+        // Deleting a property
+        delete product.price;
+        console.log(product);
+
+        // Variable Notation
+        let property='item_name';
+        console.log(product[property]); //To be done without quotes
+    </script>
+</body>
+</html>
