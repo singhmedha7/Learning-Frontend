@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object References</title>
+</head>
+<body>
+    <!--Objects work based on references, not actual data.
+    Copying an object copies the reference, not the actual object.
+    When comparing with ==, you're comparing references, not content.
+    Changes to one reference affects all copies.-->
+
+    <script>
+        let a=5;
+        let b=a;//The address is directly copied in primitives
+        console.log(`a=${a}, b=${b}`);
+        a=8;
+        console.log(`a=${a}, b=${b}`);
+
+        let x={num: 5};
+        let y=x;//The reference is copied so they have the same object
+        console.log(`x=${x.num}, y=${y.num}`);
+        x.num=8;
+        console.log(`x=${x.num}, y=${y.num}`);
+        console.log(x===y);//Same reference
+
+        let p={pop: 'iujh'};
+        let q={pop: 'iujh'};
+        console.log(p==q);//False since both have different memory addresses despite having same value
+        console.log(p===q);//Only references are checked which are different
+    </script>
+</body>
+</html>

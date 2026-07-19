@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inside Object</title>
+    <title>Inside Object and Autoboxing</title>
 </head>
 <body>
     <!--Objects can contain primitives like numbers and strings.
@@ -12,7 +12,12 @@
     Functions inside an object are called methods.
     Null Value: Intentionally leaving a property empty.-->
 
+    <!--Autoboxing is the automatic conversion of primitives to objects.
+    It allows properties and methods to be used on primitives.
+    Example: Strings have properties and methods like length, toUpperCase, etc.-->
+
     <script>
+        // Inside Objects
         let product={
             company: 'Mango',
             Price: 860,
@@ -32,6 +37,11 @@
         product.displayPrice(); //Call it like a function
         console.log(product.Reviews.rating);
         console.log(product.Reviews.totalReviews);
+
+        // Autoboxing
+        console.log('This is Javascript'.length);
+        console.log('This is Javascript'.toUpperCase());
+        console.log('This is Javascript'.replace('Javascript', 'JS'));
     </script>
 </body>
 </html>
