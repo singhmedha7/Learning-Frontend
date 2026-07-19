@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <!--JavaScript Object Notation is similar to JS object.
+    Common in network calls and data storage.
+    JSON.stringfy()(object(JSON) to string) and JSON.parse()(string to object)
+    Strings are easy to transport over network.
+    JSON requires double quotes , i.e., key and value both must be strings. Escaped as \".
+    JSON is data format, JS object is data structure.-->
+    <img src="Screenshot 2026-07-19 195635.png" >
+    <script>
+        let product={
+            name :'T-shirt',
+            price: 799,
+            rating: {
+                starts: 4.5,
+                review: 80,
+            },
+        };
+        console.log(typeof product);
+        console.log(product);
+        let str=JSON.stringify(product);
+        console.log(typeof str);
+        console.log(str);
+        let newProduct=JSON.parse(str);
+        console.log(typeof newProduct);
+        console.log(newProduct);
+    </script>
+</body>
+</html>
