@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 5</title>
+</head>
+<body>
+    <script>
+        // Product from Myntra
+        let Myntra={
+            company: 'MyWay',
+            price: 700,
+            item_name: 'Floral Skirt',
+            description: 'A 2.5Feet long floral skirt in the colour red and white',
+            'delivery-time': '2 days',
+        };
+        let Product=Myntra;//References of object
+        console.log(Myntra);
+        console.log(Product);
+        Myntra.price=800;
+        Myntra.company='HUMANE';
+        console.log(Product);
+        console.log(Myntra['delivery-time']);
+
+        // Rewview
+        let Review={
+            message: 'good-job',
+            status: 'complete',
+        }
+        console.log(Review);
+        let {message, status}=Review;
+        console.log(`${message} & ${status}`);
+
+        // Comparing Objects
+        function isIdenticalProduct(Product1,Product2){
+            if(typeof Product1!=='object' || typeof Product2!== 'object'){
+                console.warn('Pararmeter passed was not an object');
+            }
+            if(Product1==Product2){
+                return true;
+            }
+            if (Product1.company===Product2.company && Product1.price===Product2.price && Product1['delivery-time']===Product2['delivery-time'] && Product1.item_name===Product2.item_name && Product1.description===Product2.description){
+                return 'Both objects are same';
+            }else{
+                return 'Objects are not same';
+            }
+
+        }
+        let Product2={
+            company: 'HUMANE',
+            price: 800,
+            item_name: 'Floral Skirt',
+            description: 'A 2.5Feet long floral skirt in the colour red and white',
+            'delivery-time': '2 days',
+        };
+        console.log(isIdenticalProduct(Product,Product2));
+        console.log(isIdenticalProduct(Product,'Product2'));
+        console.log(isIdenticalProduct(Product,Product));
+        console.log(isIdenticalProduct(Myntra,Product2));
+    </script>
+</body>
+</html>

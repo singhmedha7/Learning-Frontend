@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Shortcuts</title>
+</head>
+<body>
+    <!--De-structuring: Extract properties from objects easily.
+    We can extract more than one property at once.
+    Shorthand Property: {message : message} simplifies to just message.
+    Shorthand Method: Define methods directly inside the object without the function keyword.-->
+
+    <script>
+        let Price=860;
+        let product={
+            company: 'Mango',
+            Price,// This is the same as Price: Price(say we are taking it as input)
+            item_name: 'T-shirt',
+            displayPrice(){
+                console.log(`Price of the product is ${this.Price}`)
+            },//This is the same as displayPrice: function(){};
+            Reviews: {
+                rating:'4/5',
+                totalReviews:87,
+            },
+        }
+
+        // De-structuring
+        let {company}=product;
+        console.log(company , Price);
+        product.displayPrice();
+
+
+        
+    </script>
+</body>
+</html>

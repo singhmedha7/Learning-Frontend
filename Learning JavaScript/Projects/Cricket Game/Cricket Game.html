@@ -45,12 +45,15 @@
 
 
 
-    <!--Improving code using functions-->
+    <!--Improving code using functions and objects-->
     <script>
         let score={
             win:0,
             lost:0,
             tie:0,
+            displayScore(){
+                return `Won: ${score.win}; Lost: ${score.lost}; Tied: ${score.tie}`;
+            },
         };
 
 
@@ -110,7 +113,7 @@
 
 
         function showResult(userMove,computerMove,result){
-            alert(`You have picked ${userMove} \nComputer has picked ${computerMove} \n\n${result} \nWin: ${score.win}, Loss: ${score.lost}, Tie: ${score.tie}`);
+            alert(`You have picked ${userMove} \nComputer has picked ${computerMove} \n\n${result} \n${score.displayScore()}`) 
         }
     </script>
 </body>
