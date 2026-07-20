@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!--DOM and Element Properties: location, title, href, domain, innerHTML, innerText, classList
+    DOM and Element Methods: getElementById(), querySelector(), classList: add(),remove(), createElement(), appendChild(), removeChild(), replaceChild().-->
+    <div class="div">This is Div</div>
+    <script>
+        let button = document.createElement('Button');
+        let button2 = document.createElement('Button');
+        button.innerText= 'click me';
+        document.querySelector('.div').appendChild(button);
+        document.querySelector('.div').replaceChild(button2,button);
+    </script>
+</body>
+</html>
