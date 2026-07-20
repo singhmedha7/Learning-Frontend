@@ -20,16 +20,16 @@
     </style>
 </head>
 <body>
-    <button type="button" class="bag" onclick="cartQuantity++;document.querySelector('#cartsummary').innerText = `Your Bad has ${cartQuantity} items`;">Add to Bag</button>
-    <button id="Wishlist" onclick="cartQuantity--;document.querySelector('#cartsummary').innerText = `Your Bad has ${cartQuantity} items`;">Move to Wishlist</button>
-    <button class="bag" onclick="cartQuantity+=2;document.querySelector('#cartsummary').innerText = `Your Bad has ${cartQuantity} items`;">Add 1+1 sale item</button>
+    <button type="button" class="bag" onclick="cartQuantity++;document.querySelector('#cartsummary').innerText = `Your Bag has ${cartQuantity} items`;">Add to Bag</button>
+    <button id="Wishlist" onclick="cartQuantity--;document.querySelector('#cartsummary').innerText = `Your Bag has ${cartQuantity} items`;">Move to Wishlist</button>
+    <button class="bag" onclick="cartQuantity+=2;document.querySelector('#cartsummary').innerText = `Your Bag has ${cartQuantity} items`;">Add 1+1 sale item</button>
     <br>
     <br>
     <h1 id="cartsummary">Your Bag has 0 items</h1>
 
     <script>
         let cartQuantity = 0;
-        document.querySelector('#cartsummary').innerText = `Your Bad has ${cartQuantity} items`;
+        document.querySelector('#cartsummary').innerText = `Your Bag has ${cartQuantity} items`;
     </script>
 </body>
 </html>
