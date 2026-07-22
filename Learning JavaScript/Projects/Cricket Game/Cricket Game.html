@@ -8,21 +8,19 @@
         body{
             text-align: center;
         }
-        button{
-            width: 60px;
-        }
+        
     </style>
 </head>
 <body>
     <h1>Bat Ball Stump Game</h1>
 
     <!--BAT-->
-    <button onclick="
+    <button class="choice-button" onclick="
     let userChoice='Bat';
     let computerChoice=generateComputerChoice();
     let resultMsg=getResult(userChoice,computerChoice);
     showResult(userChoice,computerChoice,resultMsg);
-    ">Bat</button>
+    "><img src="bat.png" class="choice-image" alt="Bat"></button>
 
 
     <!--BALL-->
@@ -31,7 +29,7 @@
     computerChoice=generateComputerChoice();
     resultMsg=getResult(userChoice,computerChoice);
     showResult(userChoice,computerChoice,resultMsg);
-    ">Ball</button>
+    "><img src="ball.png" class="choice-image" alt="Ball"></button>
 
 
     <!--STUMP-->
@@ -40,11 +38,18 @@
     computerChoice=generateComputerChoice();
     resultMsg=getResult(userChoice, computerChoice);
     showResult(userChoice,computerChoice,resultMsg);
-    ">Stump</button><br><br>
+    "><img src="stump.png" class="choice-image" alt="Stump"></button><br><br>
 
-    <!--RESET-->
-    <button style="left:355px;" onclick="localStorage.clear() 
-           resetScore(scoreStr);">Reset</button>
+    <!--RESULT DISPLAY-->
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+
+     <!--RESET-->
+    <button style="left:355px;" onclick="localStorage.clear();
+           resetScore(null);">Reset</button>
+
 
 
 
@@ -63,6 +68,7 @@
         score.displayScore=function(){
                 return `Won: ${score.win}; Lost: ${score.lost}; Tied: ${score.tie}`;
             };
+        showResult();
         }
 
 
@@ -123,7 +129,14 @@
 
         function showResult(userMove,computerMove,result){
             localStorage.setItem('Score',JSON.stringify(score));
-            alert(`You have picked ${userMove} \nComputer has picked ${computerMove} \n\n${result} \n${score.displayScore()}`) 
+
+            document.querySelector('#user-move').innerText=userMove? `You have picked ${userMove}`: '';
+
+            document.querySelector('#computer-move').innerText=computerMove? `Computer has picked ${computerMove}`: '';
+
+            document.querySelector('#result').innerText=result||'';
+
+            document.querySelector('#score').innerText=`${score.displayScore()}`;
         }
     </script>
 </body>
