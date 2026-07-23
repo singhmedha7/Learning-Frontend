@@ -19,12 +19,34 @@
     De-structuring also works for arrays.-->
     <script>
         let obj={ijk:34};
-    let some=[1,true,null,'gcd'];
+        let some=[1,true,null,'gcd'];
         console.log(some);
         console.log(typeof some);
         console.log(Array.isArray(some));
         console.log(Array.isArray(obj));
         console.log(some.length);
+
+        some.push(70);
+        console.log(some);
+        let popped=some.pop();
+        console.log('popped '+ popped);
+
+        some.unshift('teracotta');
+        console.log(some);
+        console.log(some.shift());
+
+        some.splice(2,1); //(index,no of elements to delete)
+        console.log(some);
+
+        console.log(some.toString());
+
+        let arr=[3,6,2,7,8,3,4,6,7];
+        console.log(arr);
+        arr.sort();
+        console.log(arr);
+
+        console.log(arr.valueOf());
+        
     </script>
 </body>
 </html>
