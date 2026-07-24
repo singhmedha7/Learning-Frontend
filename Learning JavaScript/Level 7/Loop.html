@@ -24,6 +24,10 @@
     Don't forget to update condition to avoid infinite loops.
     Syntax: do{//Body of loop}while(condition);-->
 
+    <!--For loop is the standard loop for running code multiple times.
+    Generally preferred for counting iterations.
+    Syntax: for(initialisation; condition; update){//Body pf loop}-->
+
     <script>
         // while loop
         let num=1; //Initialisation
@@ -54,6 +58,16 @@
             num3++;
         }while(false);
         console.log("Final value of num3: " + num3);
+
+        // for loop
+        for(let num4=1; num4<=10; num4=num4+2){
+            console.log(num4);
+        }console.log("For loop ends")
+        
+        let nums=[4,5,6,78,5,24,6,8,9,2,2,3455,6,4,34,56,70];
+        for(let i=0; i<nums.length; i++){
+            console.log(nums[i]);
+        }
     </script>
 </body>
 </html>
