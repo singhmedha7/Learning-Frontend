@@ -18,7 +18,14 @@
     We need to always include a update to avoid infinite loops.
     Syntax: while(condition){//Body of loop}-->
 
+    <!--Do While loop executes block first, then cheks condition.
+    It is guaranteed to run at least one iteration.
+    Unlike while, first iteration is unconditioned.
+    Don't forget to update condition to avoid infinite loops.
+    Syntax: do{//Body of loop}while(condition);-->
+
     <script>
+        // while loop
         let num=1; //Initialisation
         while(num<=10){ //Condition
             console.log(num);
@@ -32,6 +39,21 @@
             num1=Math.random()*2;
         }
         console.log("Final: " + num1)
+
+        // do while
+        let num2=0
+        do{
+            console.log(num2);
+            num2++;
+        }while(num2<5);
+        console.log("Final value of num2: " + num2);
+
+        let num3=0
+        do{
+            console.log(num3);
+            num3++;
+        }while(false);
+        console.log("Final value of num3: " + num3);
     </script>
 </body>
 </html>
