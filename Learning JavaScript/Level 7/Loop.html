@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <!--Code that runs multiple times based on a condition is a loop.
+    Loops alse alter the flow of execution like functions.
+    Loops are repeated execution of code.
+    Loops automate repetitive
+    There for, while, and do while loops.
+    Iteration is the number of times a loop runs.-->
+
+    <!--While loop is used for non-standard consitions.
+    It runs the block of code while the condiiton is true.
+    We need to always include a update to avoid infinite loops.
+    Syntax: while(condition){//Body of loop}-->
+
+    <script>
+        let num=1; //Initialisation
+        while(num<=10){ //Condition
+            console.log(num);
+            num++; //Updating
+        }
+        console.log("Final value of num: " + num);
+
+        let num1=0;
+        while(num1<1){
+            console.log(num1);
+            num1=Math.random()*2;
+        }
+        console.log("Final: " + num1)
+    </script>
+</body>
+</html>
