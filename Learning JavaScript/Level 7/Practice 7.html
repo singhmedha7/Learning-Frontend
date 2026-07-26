@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 7</title>
+</head>
+<body>
+    <script>
+        let num=[5,6];
+        num.unshift(4);
+        num.push(7);
+        console.log(num);
+        console.log('Question 1');
+
+        
+        function returnElement(num,index){
+            return num[index-1];
+        }
+        console.log(returnElement(num,3));
+        console.log('Question 2');
+
+        //Slice Method
+        function numCopy(num){
+          return num.slice(0, num.length);
+        }
+        let nums=numCopy(num);
+        nums[0]=null;
+        console.log(num);
+        console.log(nums);
+        console.log('Question 3')
+
+        function isPrime(number){
+            for(let i=2;i<number;i++){
+                if (number%i===0){
+                    return false;
+                }
+            }
+            return true;
+        }
+        let numbers=2;
+        let count=0;
+        while(true){
+           if (isPrime(numbers)){
+            console.log(numbers);
+            count++;
+            if (count>=5){
+                break;
+            }
+           }
+           numbers++;
+        }
+        console.log('Question 4 and 5');
+
+        let num1=10;
+        while(num1>0){
+            console.log(num1);
+            num1--;
+        }
+        console.log('Question 6');
+
+        let num2=[1,-6,5,7,-98];
+        for(let i=0;i<num2.length;i++){
+            if(num2[i]>0){
+                console.log(num2[i]);
+            }else{
+                continue;
+            }
+        }
+        console.log('Question 7');
+
+        let arr=['Learning','From','The','Best','JS','Course'];
+        let concatenate='';
+        for(let i=0;i<arr.length;i++){
+            concatenate=concatenate+' ' +arr[i];
+        }
+        console.log(`Concatenated array is- ${concatenate}`);
+        console.log('Question 8');
+    </script>
+</body>
+</html>
