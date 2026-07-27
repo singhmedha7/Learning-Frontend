@@ -20,7 +20,7 @@ function addTask(){
     displayItems();
 }
 
-
+//To display pr delete tasks
 function displayItems(){
     let containerElement=document.querySelector('.todo-container');
 
