@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Functions as Values</title>
+</head>
+<body>
+    <!--Functions in JS are first-class citizens; they can be assigned to variables.
+    Functions defined without a name are often assigned to a variables.
+    Anonymous functions can be properties in objects.
+    Can be passed ass arguments to other functions.
+    Invoked using () after the function name or variable.
+    console.log(myfuction); and typeof myFuction will both indicate it's a function.
+    Syntax: let sum=fuction(num1,num2)
+     {return num1+num2};-->
+
+
+    <script>
+        //Assigning function to variable
+        let sum = function (num1, num2){
+            return num1+num2;
+        };
+        let neSum=sum;
+        console.log(sum(4,5));
+        console.log(neSum(3,4));
+
+        //Passing fuction as argument
+        let total=function(num3){
+            return sum(3,4)+num3;
+        };
+        console.log(total(3));
+        //We can also define functions inside fuctions
+        let sumThree=function(n1,n2,n3,sumTwo){
+            let Two=sumTwo(n1,n2);
+            return sumTwo(Two,n3);
+        }
+        console.log(sumThree(4,5,6,sum));
+        console.log(sumThree);
+        console.log(typeof sumThree);
+    </script>
+</body>
+</html>
