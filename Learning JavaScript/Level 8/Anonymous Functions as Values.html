@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anonymous Functions as Values</title>
+    <title>Anonymous Functions as Values And Arrow Functions</title>
 </head>
 <body>
     <!--Functions in JS are first-class citizens; they can be assigned to variables.
@@ -14,6 +14,11 @@
     console.log(myfuction); and typeof myFuction will both indicate it's a function.
     Syntax: let sum=fuction(num1,num2)
      {return num1+num2};-->
+
+    <!--Arrow functions are a consice way to write anonymous functions.
+    For single Argument: Round brackets are optional.
+    For single line: Curly brackets and return optional.
+    Often used when passing functions as arguments.--> 
 
 
     <script>
@@ -38,6 +43,21 @@
         console.log(sumThree(4,5,6,sum));
         console.log(sumThree);
         console.log(typeof sumThree);
+
+        //Arrow Functions
+        let sum1=(no1,no2)=> no1+no2;
+
+        console.log(sum1(3,2));
+
+        // let square=(number)=>return number*number;
+        // console.log(square(76));
+
+        // let square=number=>return number*number;
+        // console.log(square(76));
+
+        let square=number=>number*number;
+        console.log(square(76));
+        
     </script>
 </body>
 </html>
