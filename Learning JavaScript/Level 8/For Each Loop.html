@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Each Loop</title>
+</head>
+<body>
+    <!--It is a method for array iteration, often preferred for readability.
+    Parameters: One for item, optional second for index.
+    Using return is similar to continue in traditional loops.
+    Not straightforward to break out of a forEach loop.
+    Used when we need to perform an action on each array element and don't need to break early.-->
+
+    <script>
+        let arr=[3,5,7,9];
+
+        arr.forEach((num)=>console.log(num))
+
+        function search(arr,num){
+            for(let i=0;i<arr.length;i++){
+                if(arr[i]===num){
+                    console.log(`Element found at: ${i+1}`);
+                    return;
+                }
+            }
+            console.log('Not found')
+        }
+            search(arr,7);    
+            search(arr,2);
+
+        //return acts like continue and break isn't straightforward
+        arr.forEach(num1=>{
+            if(num1===5){
+                return;
+            }
+            console.log(`visited: ${num1}`);
+        })
+    </script>
+</body>
+</html>
