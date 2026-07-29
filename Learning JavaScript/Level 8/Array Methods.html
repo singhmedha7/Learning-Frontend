@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <!--Filter Method:
+     Syntax: array.filter((value,index)=> return true/false)
+     Use: Filter elements based on condition.
+     
+    Map Method:
+     Syntax: array.map((value)=>return newValue)
+     Use: Transform each element.-->
+
+    <script>
+        //Filter
+        let arr=[1,2,3,4,5,6,7,8,9];
+        let odds=arr.filter((num,index)=>{
+            if(num%2===1){
+                return true;
+            }else{
+                return false;
+            }
+        })
+        console.log(odds);
+
+        //Shorthand
+        let evens=arr.filter((nums,index)=>nums%2===0
+        )
+        console.log(evens);
+
+        //Map
+        let Arr=[1,2,3,4,5];
+        let squares=Arr.map(number=>number*number);
+        console.log(squares);
+    </script>
+</body>
+</html>
