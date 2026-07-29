@@ -20,7 +20,7 @@
      <script>
         //Don't call a function inside setTimeout if function is defined in a varioable.Only pass it as done with sum in sumThree
         let alarm=()=>console.log(`It is late, go to sleep ${new Date}`)
-        let timerID=setTimeout(alarm,5000);
+        let timerID= setTimeout(alarm,5000);
         console.log(`Alarm Set with timer ID ${timerID}`);
 
         //clearTimeout(1); timerID is 1

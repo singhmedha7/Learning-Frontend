@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+   <!--An event is an occurance like clicks, mouse movements, keyboard input(eg: birthday,functions).
+   We can use querySelector to attach listeners.
+   We can add more than one listeners.
+   removeEventListener("event",fuction variable)-->
+   <button id="my-btn">Click Me</button>
+   
+   <script>
+    let buttonElement=document.querySelector('#my-btn');
+    let behaviour=event=>console.log('I am clicked');
+    buttonElement.addEventListener('click',behaviour);
+
+    let printDate=event=>console.log(new Date());
+    buttonElement.addEventListener('click',printDate);
+
+    buttonElement.removeEventListener('click',behaviour);
+   </script>
+</body>
+</html>
