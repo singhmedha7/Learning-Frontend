@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Set 8</title>
+    <style>
+        .my-btn{
+            height: 20px;
+            width: 160px;
+            background-color: rgb(250, 153, 247);
+            box-shadow: 0px 5px 5px 0px thistle;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            color: rgb(252, 251, 249);
+        }
+        .js-size-double{
+            height: 40px;
+            width: 320px;
+            font-size: 30px;
+        }
+    </style>
 </head>
 <body>
-    
+    <button class="my-btn" >Click Here</button>
+    <script>
+        let multiply=(num1,num2)=>num1*num2;
+        console.log(multiply(4,5));
+        console.log('Question 1');
+
+        let printGreeting=()=>console.log('Calling a function twice');
+        // let runTwice=printGreeting;
+        // let intervalID=setInterval(runTwice,2000);
+        // setTimeout(()=>clearInterval(intervalID),5000);
+        // console.log('Question 2');
+
+        //OR
+
+        let RunTwice=inputFunction=>{
+            inputFunction();
+            inputFunction();
+        };
+        RunTwice(printGreeting);
+
+
+        function doubleTheSize(){
+            let buttonElement=document.querySelector('.my-btn');
+            buttonElement.classList.add('js-size-double');
+        };
+        
+        let buttonElement=document.querySelector('.my-btn');
+        buttonElement.addEventListener('click', event=>
+            setTimeout(doubleTheSize,2000)
+        );
+        console.log('Question 3,4')
+
+        let arr=[1,2,3,4,5,6,7];
+        let sum=0;
+        arr.forEach(num=>sum+=num);
+        console.log(sum);
+        console.log('Question 5')
+
+        let squares=arr.map(num=>num*num);
+        console.log(squares);
+        console.log('Question 6');
+    </script>
 </body>
 </html>
