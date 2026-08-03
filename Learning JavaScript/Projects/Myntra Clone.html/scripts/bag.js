@@ -8,6 +8,8 @@ function onLoad(){
     displayBagSummary();
 }
 
+
+//Total Cost Calculation
 function displayBagSummary(){
     let bagSummaryElement=document.querySelector('.bag-summary');
     let totalItems=bagItemObjects.length;
