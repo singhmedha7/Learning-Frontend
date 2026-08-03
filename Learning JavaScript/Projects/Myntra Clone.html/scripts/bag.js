@@ -79,6 +79,8 @@ function removeFromBag(itemId){
     displayBagSummary();
 }
 
+
+//Item Display
 function generateItemHTML(item){
    return  `
     <div class="bag-item-container">
