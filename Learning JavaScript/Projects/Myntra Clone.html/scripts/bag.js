@@ -70,6 +70,8 @@ function displayBagItems(){
     containerElement.innerHTML=innerHTML;
 }
 
+
+//Remove Item From bag
 function removeFromBag(itemId){
     bagItems=bagItems.filter(bagItemId=>bagItemId!=itemId);
     localStorage.setItem('bagItems',JSON.stringify(bagItems));
